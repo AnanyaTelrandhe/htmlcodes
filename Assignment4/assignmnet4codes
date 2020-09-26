@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 by Ananya  </title>
+</head>
+<body >
+    
+    <h1>coding blocks Jr. Web Development Website By Ananya</h1>
+    <h4> Below we have different sections.In each section links have been used.</h4>
+    <a href ="#section3" >link for section 3 in assignment 4</a>
+    <br>
+    <br>
+    <a href ="abc.html"target = "_blank"> link to view abc.html</a>
+    <br>
+    <br>
+     <a href ="abc.html#ef"target = "_blank">link to view 'place 3 'of abc.html</a>
+    <br>
+    <br>
+    <a href ="xyz.html">link to view xyz.html</a>
+    <br>
+    <br>
+    <a href ="xyz.html#tu">LInk to view'food 3 ' in xyz.html</a>
+    <br>
+    <br>
+
+
+
+
+
+
+    <h2 id="section1">Section.1</h2>
+    <h3> section from where you can visit different websites </h3>
+    <h5>(note the website will open in a new page)</h5>
+<h4><a href = "https://www.youtube.com/"target =_blank>youtube</a><br>
+<a href ="https://parenting.firstcry.com/articles/10-educational-cartoons-your-child-should-be-watching/"target =_blank>Educational Cartoons for kids</a><br>
+<a href ="https://online.codingblocks.com/"target =_blank>Coding blocks </a><br>
+<a href = "http://github.com/" target = _blank>Github</a>
+
+</h4>
+<br><br><br>
+
+<h2 id =section2> 
+Section 2  
+</h2>
+<h3>
+    This section consist of the links through which we can directly call a particular
+    organization
+
+</h3>
+<h4>
+<a href = "tel:18001801104 "> medical helpline number</a>
+<br>
+<a href = " tel:18008899999"> jio customer care helpline number</a>
+<br>
+<a href = "tel:18002744504"> Coding blocks helpline number</a>
+<br>
+<a href = "tel:911123978046"> COVID-19 helpline number</a>
+<br>
+</h4>
+<br><br><br>
+<h2 id = section3> Section 3 </h2>
+<h3>
+<a href ="mailto:abc@gmail.com "> codingblocks helpline E-mail</a>
+<br>
+<a href ="mailto:abc@gmail.com "> SBI helpline number E mail id</a>
+<br>
+<a href ="mailto:abc@gmail.com "> Vidyamandir helpline classes E mail id</a>
+<br>
+<a href ="mailto:abc@gmail.com "> COVID-19 helpline E-mail Id</a>
+<br>
+</h3>
+<h2 id = section4>Section 4</h2>
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur possimus ab cupiditate? Debitis, recusandae hic vel animi iure numquam est, incidunt quasi eaque enim in eveniet, libero doloribus. Laboriosam!</h3>
+<h2 id = section4>Section 4</h2>
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur possimus ab cupiditate? Debitis, recusandae hic vel animi iure numquam est, incidunt quasi eaque enim in eveniet, libero doloribus. Laboriosam!</h3>
+
+</body>
+</html>
