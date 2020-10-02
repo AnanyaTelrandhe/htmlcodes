@@ -1,0 +1,173 @@
+.about h2{font-size: 30px;
+color:goldenrod}
+.about p{font-size: ;}
+
+.skill p span.high{font-style: italic ; font-style: bold;
+font-weight: 900;
+}
+.skills li{font-weight: 900;}
+.mom{text-shadow:5px 5px 3px hotpink ;
+
+    
+        color: yellow;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+                     5px 5px 1px orange,
+                     6px 6px 2px rgba(0,0,0,0.7),
+                     10px 10px 1px red,
+                     11px 11px 2px rgba(0,0,0,0.7),
+                     15px 15px 1px purple,
+                     16px 16px 2px rgba(0,0,0,0.7);
+        -webkit-animation: text-snake 1s infinite alternate;
+        -moz-animation: text-snake 1s infinite alternate;
+        -ms-animation: text-snake 1s infinite alternate;
+        animation: text-snake 1s infinite alternate;      
+   }
+
+   /* other prefixed animation blocks ommitted for brevity */
+
+   @keyframes text-snake {
+     from {
+         text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+                     5px 5px 1px orange,
+                     6px 6px 2px rgba(0,0,0,0.7),
+                     10px 10px 1px red,
+                     11px 11px 2px rgba(0,0,0,0.7),
+                     15px 15px 1px purple,
+                     16px 16px 2px rgba(0,0,0,0.7);
+     }
+     to {
+         text-shadow: -1px 1px 2px rgba(0,0,0,0.7),
+                     -5px 5px 1px orange,
+                     -6px 6px 2px rgba(0,0,0,0.7),
+                     -10px 10px 1px red,
+                     -11px 11px 2px rgba(0,0,0,0.7),
+                     -15px 15px 1px purple,
+                     -16px 16px 2px rgba(0,0,0,0.7);
+     }
+   }
+
+.mom{text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mom{text-shadow: 5px 5px 3px indianred;}
+.grt{text-shadow:5px 5px 3px  rgb(250, 12, 12),
+     4px 4px 4px yellow;
+    
+    
+     font-size: 1.5rem;
+     text-align: center;
+     line-height: 1.2;
+     padding: 0.5rem;
+     color: #fff;
+     background-color: rebeccapurple;
+     font-weight: 800;
+     font-style: italic;
+     text-transform: uppercase;
+    
+     
+    }
+
+
+
+
+.q{text-align: center;}
+a{text-decoration: none; text-align: center;
+   
+}
+.q{background-image: linear-gradient(red, yellow);}
+.p1{font-family: Pacifico;
+
+
+
+
+
+
+
+
+
+
+
+
+    text-shadow: 1px 1px 1px red,
+    2px 2px 1px red;   
+    letter-spacing: 2px;
+color:white
+
+
+
+
+
+
+
+
+}
+
+
+
+.p1{text-align: center;}
+
+
+
+
+
+
+
+.p2{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #fbff00;
+    color:white
+}
+
+.p3{ text-shadow: 1px 1px 1px #000, 
+    3px 3px 5px rgb(60, 226, 88); color:white}
+
+
+.Why{ color: #FFFFFF;
+    background: #F7C1C1;
+    text-shadow: 4px 3px 0px #7A7A7A;
+    color: #FFFFFF;
+    background: #F7C1C1; text-align: center;
+   }
+/* love */
+
+.love{background: #FFC375; text-align: center;
+    background: -moz-linear-gradient(45deg, #FFC375 0%, #9B33FF 55%, #FF0A1F 100%);
+    background: -webkit-linear-gradient(45deg, #FFC375 0%, #9B33FF 55%, #FF0A1F 100%);
+    background: linear-gradient(45deg, #FFC375 0%, #9B33FF 55%, #FF0A1F 100%); color:white}
+
+
+
+
+
+
+
+
+
+
+
+
+   /* body */
+body{background-color: black;}
+
+.a{color:rgb(255, 9, 9)}
+.b{color:yellow}
+.c{color:greenyellow}
+
+
+.d{color:purple}
+.e{color:gold}
+.f{color:teal}
+
+
+
+
