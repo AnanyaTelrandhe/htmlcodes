@@ -1,0 +1,68 @@
+body{
+background-color:rgb(255, 197, 195);
+
+}
+
+.bar{
+background-color: white;
+margin-top: 50px;
+margin-left: 70px;
+
+padding-left: 50px;
+padding-bottom: 10px;
+padding-top: 10px;
+
+}
+
+.wel{background-color: white;
+padding-bottom: 3px;
+
+
+}
+.i{padding-left: 20px;}
+.name{padding-left: 20px;}
+b{padding-left: 20px;}
+
+
+.wel{margin-left: 70px;
+  margin-right: 40px;
+padding-left:  20px;
+}
+
+/* about me */
+.about{
+background-color: white;
+margin-left: 70px;
+margin-right: 40px;
+padding-left: 20px;
+padding-top: 30px;
+padding-bottom: 10px;
+
+
+}
+
+.abt{font-size: 20px;
+}
+/* projects */
+.projects{background-color: white;
+margin-left: 70px;
+margin-right: 20px;
+padding-top: 20px;
+padding-left: 20px;
+padding-bottom: 20px;
+}
+a{text-decoration: none;}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
