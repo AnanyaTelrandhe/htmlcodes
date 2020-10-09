@@ -1,0 +1,214 @@
+h4{background-color: rgb(252, 172, 172);
+text-align: center;
+color: purple
+
+
+
+}
+
+
+
+
+.read{
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color:rgb(199, 234, 255);
+
+border-color: rgb(230, 34, 230);
+border-width: 20px;
+border-style: groove;
+
+
+}
+h2{
+    text-shadow:5px 5px 3px  rgb(250, 12, 12),
+     4px 4px 4px yellow;
+    
+    
+     font-size: 1.5rem;
+     text-align: center;
+     line-height: 1.2;
+     padding: 0.5rem;
+     color: #fff;
+     background-color: rebeccapurple;
+     font-weight: 800;
+     font-style: italic;
+     text-transform: uppercase;
+    
+     
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  height: 200px;
+  }
+div.para{
+    background-color:lightyellow;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Grenze Gotisch', cursive;
+  color:maroon;
+
+}
+
+form{
+    text-align: center;
+}
+
+.inst:hover{
+background-color: red;
+color:white
+}
+
+.inpart:hover{
+    background-color: orange;
+}
+
+.igr:hover{
+    background-color: pink;
+    border-color: purple;
+    border-style: groove;
+    border-width: 5px;
+}
+
+
+.phone:hover{
+    background-color: lime;
+    border-width: 5px;
+    border-style: groove;
+}
+
+
+
+/* comment */
+
+.file:hover{
+   background-color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+
+    text-align: center;
+   
+
+
+    text-shadow:5px 5px 3px hotpink ;
+
+    
+        color: yellow;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+                     5px 5px 1px orange,
+                     6px 6px 2px rgba(0,0,0,0.7),
+                     10px 10px 1px red,
+                     11px 11px 2px rgba(0,0,0,0.7),
+                     15px 15px 1px purple,
+                     16px 16px 2px rgba(0,0,0,0.7);
+        -webkit-animation: text-snake 1s infinite alternate;
+        -moz-animation: text-snake 1s infinite alternate;
+        -ms-animation: text-snake 1s infinite alternate;
+        animation: text-snake 1s infinite alternate;      
+   }
+
+   /* other prefixed animation blocks ommitted for brevity */
+
+   @keyframes text-snake {
+     from {
+         text-shadow: 1px 1px 2px rgba(0,0,0,0.7),
+                     5px 5px 1px orange,
+                     6px 6px 2px rgba(0,0,0,0.7),
+                     10px 10px 1px red,
+                     11px 11px 2px rgba(0,0,0,0.7),
+                     15px 15px 1px purple,
+                     16px 16px 2px rgba(0,0,0,0.7);
+     }
+     to {
+         text-shadow: -1px 1px 2px rgba(0,0,0,0.7),
+                     -5px 5px 1px orange,
+                     -6px 6px 2px rgba(0,0,0,0.7),
+                     -10px 10px 1px red,
+                     -11px 11px 2px rgba(0,0,0,0.7),
+                     -15px 15px 1px purple,
+                     -16px 16px 2px rgba(0,0,0,0.7);
+     }
+}
