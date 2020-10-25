@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- style -->
+<style>
+.malala_head {
+    background-image: url(data:image/jpeg;base64,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);
+
+height: 150px;
+
+align-content: center;
+text-align: center;
+}
+.malala_head_text{
+    background-color: crimson;
+  
+    font-size: 25px;
+    color:white;
+    
+}
+
+.malala_body .about_me .about_me_head{
+    background-color: violet;
+    position: relative;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+    /* for shadow */
+    /* horizontal;vertical;blurness;color*/
+  font-weight: bold;
+  font-style: italic;
+  border-width: 10px;
+  border-color: purple;
+  border-style: groove; 
+  font-size: 22px;
+  color: white;
+  /* sticky */
+  position: sticky;
+  top: 80px;
+}
+body{
+    background-color: rgb(255, 255, 129);
+}
+
+.header{
+    font-size: 50px;
+    background-color: cyan;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: darkblue;
+    /* my css */
+    width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+        /* shadow */
+        text-shadow: 5px 5px 2px blue ;
+}
+.about_me{
+    margin: 30px;
+}
+     .about_me_content:hover {
+background-color: chartreuse;
+font-size: 20px;
+font-weight: bold;
+font-style: italic;
+
+     }
+
+     .about_me_content:hover  {
+     border-color: hotpink;
+     border-style: double;
+     border-width: 20px;
+     color: black;
+     }
+      
+     .about_me_content{
+         font-size: 20px;
+         font-style: italic;
+         color: red;
+         font-weight: bold;
+         margin: 0px;
+     }
+.about_me_content_image{
+position: relative];
+float: right;
+padding: 20px;
+
+} 
+
+.childhood{
+margin: 30px;
+
+}
+.childhood_head{
+    background-color: maroon;
+    text-align: center;
+    font-size: 30px;
+    color: mintcream;
+
+    font-weight: bold;
+    font-style: italic;
+    /* mycss */
+    position: sticky;
+        top: 100px;
+        bottom: 100px;
+        z-index: 1;
+    
+        
+        border-color: coral;
+        border-width: 10px;
+    border-style: groove;
+}
+
+.childhood_content{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.childhood_content:hover{
+    font-size: 20px;
+    background-color: pink;
+    color: red;
+    border-radius: 30px;
+    border-color: orangered;
+    border-style: dotted;
+    border-width: 5px;
+    font-style: italic
+    ;
+    font-weight: bold;
+}
+
+
+</style>
+<!-- style!! -->
+
+</head>
+<body>
+    <header class="header">
+Malala Yousafzai
+    </header>
+   <br>
+   <br><br><br>
+   <div class="malala_head">
+    <div class="malala_head_text">
+        <i>
+            <b>Malala Yousafzai</b> 
+        </i>
+       
+    </div>
+    </div>
+    <!-- malala head over!! -->
+
+
+<!-- malala body start!! -->
+
+<div class="malala_body">
+<div class="about_me">
+
+<div class="about_me_head">
+About Me 
+</div>
+<br>
+<div class="about_me_content_image">
+    <img src="Shinzō_Abe_and_Malala_Yousafzai_(1)_Cropped.jpg" alt="Malala">
+    
+    </div>
+
+<div class="about_me_content">
+
+    Malala Yousafzai (Urdu: ملالہ یوسفزئی‎; Pashto: ملاله یوسفزۍ‎ [məˈlaːlə jusəf ˈzəj];[2] born 12 July 1997)[1][2][3] is a Pakistani activist for female education and the youngest Nobel Prize laureate.[4] She is known for human rights advocacy, especially the education of women and children in her native Swat Valley in Khyber Pakhtunkhwa, northwest Pakistan, where the local Pakistani Taliban had at times banned girls from attending school. Her advocacy has grown into an international movement, and according to former Pakistani Prime Minister Shahid Khaqan Abbasi, she has become "the most prominent citizen" of the country.[5]
+    <p>
+        The daughter of educational activist Ziauddin, Yousafzai was born to a Pashtun family in Mingora, Khyber Pakhtunkhwa, Pakistan. Her family came to run a chain of schools in the region. Considering Muhammad Ali Jinnah and Benazir Bhutto as her role models, she was particularly inspired by her father's thoughts and humanitarian work.[6] In early 2009, when she was 11–12, she wrote a blog under a pseudonym for the BBC Urdu detailing her life during the Pakistani Taliban occupation of Swat. The following summer, journalist Adam B. Ellick made a New York Times documentary[3] about her life as the Pakistani military intervened in the region. She rose in prominence, giving interviews in print and on television, and she was nominated for the International Children's Peace Prize by activist Desmond Tutu.
+        <p>
+            On 9 October 2012, while on a bus in the Swat District, after taking an exam, Yousafzai and two other girls were shot by a Pakistani Taliban gunman in an assassination attempt in retaliation for her activism; the gunman fled the scene. Yousafzai was hit in the head with a bullet and remained unconscious and in critical condition at the Rawalpindi Institute of Cardiology, but her condition later improved enough for her to be transferred to the Queen Elizabeth Hospital in Birmingham, UK.[7] The attempt on her life sparked an international outpouring of support for Yousafzai. Deutsche Welle reported in January 2013 that Yousafzai may have become "the most famous teenager in the world".[8] Weeks after the attempted murder, a group of fifty leading Muslim clerics in Pakistan issued a fatwā against those who tried to kill her.[9] The Pakistani Taliban were internationally denounced by governments, human rights organizations and feminist groups. Pakistani Taliban officials responded to condemnation by further denouncing Yousafzai, indicating plans for a possible second assassination attempt, which was justified as a religious obligation. Their statements resulted in further international condemnation.[10]
+            <p>
+                Following her recovery, Yousafzai became a prominent activist for the right to education. Based in Birmingham, she co-founded the Malala Fund, a non-profit organisation with Shiza Shahid,[11] and in 2013 co-authored I Am Malala, an international best seller.[12] In 2012, she was the recipient of Pakistan's first National Youth Peace Prize and the 2013 Sakharov Prize.[13][14] In 2014, she was the co-recipient of the 2014 Nobel Peace Prize, along with Kailash Satyarthi of India. Aged 17 at the time, she was the youngest-ever Nobel Prize laureate.[15][16][17] In 2015, Yousafzai was a subject of the Oscar-shortlisted documentary He Named Me Malala. The 2013, 2014 and 2015 issues of Time magazine featured her as one of the most influential people globally. In 2017, she was awarded honorary Canadian citizenship and became the youngest person to address the House of Commons of Canada.[18] Yousafzai attended Edgbaston High School in England from 2013 to 2017,[19] and graduated with a Bachelor of Arts degree in Philosophy, Politics and Economics (PPE) from the University of Oxford where she was an undergraduate student of Lady Margaret Hall, Oxford, in 2020.[20]
+            </p>
+        </p>
+    </p>
+</div>
+
+</div>
+
+
+
+
+
+<!-- her childhood' -->
+
+
+<div class="childhood">
+    <div class="childhood_head"> My Childhood</div><br>
+    <div class="childhood_content">
+
+        <p>Yousafzai was born on 12 July 1997 in the Swat District of Pakistan's northwestern Khyber Pakhtunkhwa province, into a lower-middle-class family.[21] She is the daughter of Ziauddin Yousafzai and Tor Pekai Yousafzai.[22] Her family is Sunni Muslim[3] of Pashtun ethnicity, belonging to the Yusufzai tribe.[23] The family did not have enough money for a hospital birth and as a result, Yousafzai was born at home with the help of neighbours.[24] She was given her first name Malala (meaning "grief-stricken")[25] after Malalai of Maiwand, a famous Pashtun poet and warrior woman from southern Afghanistan.[26] At her house in Mingora, she lived with her two younger brothers, Khushal and Atal, her parents, Ziauddin and Tor Pekai, and two chicken.[3]</p>
+
+        <p>
+            Fluent in Pashto, Urdu and English, Yousafzai was educated mostly by her father, Ziauddin Yousafzai, who is a poet, school owner,[27] and an educational activist himself, running a chain of private schools known as the Khushal Public School.[28][29] In an interview, Yousafzai once stated that she aspired to become a doctor, though later her father encouraged her to become a politician instead.[3] Ziauddin referred to his daughter as something entirely special, allowing her to stay up at night and talk about politics after her two brothers had been sent to bed.[30]
+        </p>
+
+        <p>Inspired by the founder of Pakistan, Muhammad Ali Jinnah and the two-time elected Prime Minister Benazir Bhutto, Yousafzai started speaking about education rights as early as September 2008, when her father took her to Peshawar to speak at the local press club.[6] "How dare the Taliban take away my basic right to education?" Yousafzai asked her audience in a speech covered by newspapers and television channels throughout the region.[31] In 2009, Yousafzai began as a trainee and then a peer educator in the Institute for War and Peace Reporting's Open Minds Pakistan youth programme, which worked in schools in the region to help young people engage in constructive discussion on social issues through the tools of journalism, public debate and dialogue.[32]</p>
+        <p>
+
+            In late 2008, Aamer Ahmed Khan of the BBC Urdu website and his colleagues came up with a novel way of covering the Pakistani Taliban's growing influence in Swat. They decided to ask a schoolgirl to blog anonymously about her life there. Their correspondent in Peshawar, Abdul Hai Kakar, had been in touch with a local school teacher, Ziauddin Yousafzai, but could not find any students willing to do so, as it was considered too dangerous by their families. Finally, Yousafzai suggested his own daughter, 11-year-old Malala.[33] At the time, Taliban militants led by Maulana Fazlullah were taking over the Swat Valley, banning television, music, girls' education,[34] and women from going shopping.[35] Bodies of beheaded policemen were being displayed in town squares.[34] At first, a girl named Aisha from her father's school agreed to write a diary, but then the girl's parents stopped her from doing it because they feared Pakistani Taliban reprisals. The only alternative was Yousafzai, four years younger than the original volunteer, and in seventh grade at the time.[36] Editors at the BBC unanimously agreed and later stated that: "We had been covering the violence and politics in Swat in detail but we didn't know much about how ordinary people lived under the Taliban", said Mirza Waheed, the former editor of BBC Urdu. Because they were concerned about Yousafzai's safety, BBC editors insisted that she use a pseudonym.[34] Her blog was published under the byline "Gul Makai" ("cornflower" in Urdu), a name taken from a character in a Pashtun folktale.[37][34][38][39]
+        </p>
+
+        <p>
+            On 3 January 2009, Yousafzai's first entry was posted to the BBC Urdu blog. She would hand-write notes and then pass them on to a reporter who would scan and e-mail them.[34] The blog records Yousafzai's thoughts during the First Battle of Swat, as military operations take place, fewer girls show up to school, and finally, her school shuts down. That same day, on her BBC blog entry, she wrote:
+
+
+        </p>
+        <p><b><i><u>On 3 January 2009, Yousafzai's first entry was posted to the BBC Urdu blog. She would hand-write notes and then pass them on to a reporter who would scan and e-mail them.[34] The blog records Yousafzai's thoughts during the First Battle of Swat, as military operations take place, fewer girls show up to school, and finally, her school shuts down. That same day, on her BBC blog entry, she wrote:
+
+        </u></i></b></p>
+        <p>
+            I had a terrible dream yesterday with military helicopters and the Taliban. I have had such dreams since the launch of the military operation in Swat. My mother made me breakfast and I went off to school. I was afraid going to school because the Taliban had issued an edict banning all girls from attending schools. Only 11 out of 27 pupils attended the class because the number decreased because of the Pakistani Taliban's edict. My three friends have shifted to Peshawar, Lahore and Rawalpindi with their families after this edict.[25]
+        </p>
+        <p>
+            In Mingora, the Pakistani Taliban had set an edict that no girls could attend school after 15 January 2009. The group had already blown up more than a hundred girls' schools.[34] The night before the ban took effect was filled with the noise of artillery fire, waking Yousafzai several times. The following day, Yousafzai also read for the first time excerpts from her blog that had been published in a local newspaper.[25]
+
+
+        </p>
+    </div>
+
+
+</div>
+</body>
+</html>
