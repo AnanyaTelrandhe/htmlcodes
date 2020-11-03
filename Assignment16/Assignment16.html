@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            align-content: center;   
+    border-color: coral;
+    border-style:solid;
+    border-width:30px;
+    text-align: center;
+padding: 30px;
+;
+        }
+.img{
+    align-content: center;   
+    border-color: coral;
+    border-style: groove;
+    border-width:10px;
+
+}
+.headwithimg{
+    align-content: center;
+    text-align: center;
+}
+
+.one p:first-child{
+background-color:darkblue;
+color: cyan;
+font-weight: bold;
+}
+
+.one p:last-child{
+background-color:red;
+color: white;
+font-weight: bold;
+}
+h1{
+    background-color: hotpink;
+    border: violet 20px groove;
+}
+
+h2{
+   
+ background: #000FFF;
+background: -moz-linear-gradient(45deg, #000FFF 0%, #FF75D9 45%, #4D266E 100%);
+background: -webkit-linear-gradient(45deg, #000FFF 0%, #FF75D9 45%, #4D266E 100%);
+background: linear-gradient(45deg, #000FFF 0%, #FF75D9 45%, #4D266E 100%);;
+
+
+}
+.two span{
+    color: yellow;
+    background-color: orangered;
+  font-size: 20px;
+}
+.two p:hover{
+    background-color: purple;
+    color: pink;
+}
+.two{
+    background-color: purple;
+    background-color: plum;
+}
+.two:last-child:focus{
+    color: red;
+}
+
+.shinchanquiz{
+    background-color: salmon;
+    padding: 20px;
+
+}
+
+
+.three input:in-range{
+    background-color: seagreen;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.three input:out-of-range{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+   input:out-of-range+label::after{
+       content: '                                            no!';
+        background-color: red;
+        color:white;
+        font-weight: bold;
+        font-size: 20px;
+  
+    }
+
+    input:in-range+label::after{
+       content: '                                            Correct Guess!';
+        background-color: green;
+        font-weight: bold;
+        font-size: 20px;
+        color:white;
+  
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="headwithimg">
+        <h1 >
+            Minnie Mouse
+        </h1>
+        <!-- image -->
+         <img class="img" src="data:image/jpeg;base64,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" >
+
+    </div>
+
+    <div>
+
+        <span>THIS IS ABOUT MINNIE</span>
+
+
+    </div>
+  
+
+    <div class="one">
+<p>
+    Minnie Mouse is a cartoon character created in 1928 at Walt Disney Animation Studios. As the girlfriend of Mickey Mouse, she is an anthropomorphic mouse with white gloves, a bow, dress, and low-heeled shoes occasionally with ribbons on them. The Mickey Mouse comic strip story "The Gleam" (published January 19 – May 2, 1942) by Merrill De Maris and Floyd Gottfredson first gave her full name as Minerva Mouse, although this is seldom used.
+</p>
+
+<p>
+    The comic strip story "Mr. Slicker and the Egg Robbers" (published September 22 – December 26, 1930) introduced her father Marcus Mouse and her unnamed mother, both farmers. The same story featured photographs of Minnie's uncle Milton Mouse with his family and her grandparents Marvel Mouse and Matilda Mouse. Her best-known relatives, however, remain her uncle Mortimer Mouse (Mortimer was almost the name of Mickey) and her twin nieces, Millie and Melody Mouse, though most often a single niece, Melody, appears. In many appearances, Minnie is presented as the girlfriend of Mickey Mouse, a close friend of Daisy Duck,[5] and a friend to Clarabelle Cow.
+</p>
+
+    </div>
+
+    <div class="two">
+<span>
+   WANNING YEARS 
+</span>
+
+<p>
+    Waning years
+    During the second half of the thirties, Minnie did not appear as often in Mickey cartoons. This was mainly due to the growth in popularity of Mickey's new sidekicks, Goofy, Donald Duck, and Pluto, whose appearances in Mickey cartoons had more or less replaced Minnie's role. Minnie's appearances in Mickey cartoons thus became less numerous, but she did have a few major roles in some Pluto and Figaro cartoons during the 1940s. Minnie made a sort of comeback in the 1980s when she was re-introduced in Mickey's Christmas Carol and then got her own starring role in Totally Minnie.[15]
+</p>
+<p contenteditable="">
+
+    In Mickey Mouse Works, she finally appeared in her own segments. Occasionally, she starred in Maestro Minnie[19] shorts, in which she conducts an orchestra of living instruments that she usually has to tame.
+</p>
+    </div>
+
+
+    <div class="shinchanquiz">
+        <h2>SHINCHAN QUIZ</h2>
+<form>
+    <div class="three">
+        <div>WHAT IS HER AGE?</div>
+        <input type="number" max="48" min="10" id="age">
+    <label for="shinchan's weight">Minnie'S WEIGHT</label>
+    
+    
+    </div>
+ 
+    <div class="three">
+
+
+        <div>WHAT IS mickey's AGE?</div>
+<input type="number" max="40" min="5" id="age">
+<label for="shinchan's weight">mickey's weight</label>
+
+
+<div>WHAT IS GOOFY'S AGE?</div>
+<input type="number" max="40" min="5" id="age">
+<label for="shinchan's weight">GOOFY'S WEIGHT</label>
+
+
+    </div>
+
+
+
+</form>
+
+
+
+
+    </div>
+
+</body>
+</html>
