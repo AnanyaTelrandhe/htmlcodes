@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>IT"S DIWLI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+
+
+* { box-sizing: border-box; } 
+/* Style the body */
+ body { font-family: Arial, Helvetica, sans-serif; 
+  margin: 0; } 
+
+  /* shadow */ 
+
+  #diwali{ color: yellow; 
+    text-shadow: 1px 1px 2px
+     rgba(0,0,0,0.7),
+      5px 5px 1px orange, 6px 6px 2px
+       rgba(0,0,0,0.7), 10px 10px 1px red,
+        11px 11px 2px rgba(0,0,0,0.7),
+        15px 15px 1px purple, 16px 16px 2px 
+        rgba(0,0,0,0.7); -webkit-animation: 
+        text-snake 1s infinite alternate; 
+        -moz-animation: text-snake 1s 
+        infinite alternate; 
+        -ms-animation: text-snake 1s 
+        infinite alternate; animation: text-snake 1s
+         infinite alternate; text-align: center;
+        
+        }
+        @keyframes text-snake { from { text-shadow: 1px 1px 2px rgba(0,0,0,0.7), 5px 5px 1px orange, 6px 6px 2px rgba(0,0,0,0.7), 10px 10px 1px red, 11px 11px 2px rgba(0,0,0,0.7), 15px 15px 1px purple, 16px 16px 2px rgba(0,0,0,0.7); } to { text-shadow: -1px 1px 2px rgba(0,0,0,0.7), -5px 5px 1px orange, -6px 6px 2px rgba(0,0,0,0.7), -10px 10px 1px red, -11px 11px 2px
+           rgba(0,0,0,0.7),
+            -15px 15px 1px purple, 
+            -16px 16px 2px 
+            rgba(0,0,0,0.7); } }
+
+
+          /* Header/logo Title */ 
+          .header { /* padding: 80px; */
+             text-align: center; background: #1abc9c; 
+             color: white; } 
+             /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */ .navbar { overflow: hidden; background-color: #333; position: sticky; position: -webkit-sticky; top: 0; } #whatisdiwalihead{ background-color: purple; color: white; padding: 10px; } #whatisdiwalipara{ background-color:pink; padding: 10px; color: rgb(255, 43, 114); } /* Style the navigation bar links */ .navbar a { float: left; display: block; color: white; text-align: center; padding: 14px 20px; text-decoration: none; } /* Right-aligned link */ .navbar a.right { float: right; } /* Change color on hover */ .navbar a:hover { background-color: red; color: white; } .navbar a:focus { background-color:yellow; color: black; } /* Active/current link */ .navbar a.active { background-color: #666; color: white; } /* Column container */ .row { display: -ms-flexbox; /* IE10 */ display: flex; -ms-flex-wrap: wrap; /* IE10 */ flex-wrap: wrap; } /* Create two unequal columns that sits next to each other */ /* Sidebar/left column */ .side { -ms-flex: 30%; /* IE10 */ flex: 33%; background-color: #f1f1f1; padding: 20px; } /* Main column */ .main { -ms-flex: 70%; /* IE10 */ flex: 67%; padding: 20px; } .whatisdiwali{ background-color: violet ; padding: 10px; margin:0; } .image{ background-color: #aaa; width: 100%; padding: 20px; } .image_whatisdiwali{ width: 100%; padding: 20px; } /* Footer */ .footer { padding: 20px; text-align: center; background: #ddd; } /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */ @media screen and (max-width: 700px) { .row { flex-direction: column; } } /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+              @media screen and (max-width: 400px) 
+
+
+
+
+
+              
+    { .navbar a { float: none; width: 100%; } }
+
+    .navbar{
+      position: sticky;
+      top: 2px;
+    }
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+
+<!-- heade -->
+<div class="header">
+  <img src="diwali images (1).png"
+  height="350px" width="100%">
+</div>
+<!-- header -->
+
+
+<!-- naavbar -->
+<nav>
+  <div class="navbar" >
+    <a href="#" class="active">Home</a>
+    <a href="#what">What is diwali</a>
+    <a href="#why">Why is diwali celebrated</a>
+   
+    <a href="#somemessage" >Some message</a>
+    <a href="#wishes" >Wishes</a>
+
+  </div>
+</nav>
+
+
+<!-- navbar -->
+
+
+
+<div class="row">
+  <div class="side">
+    <h2 id="somemessage">Some Message.....</h2>
+  
+    <div style="height:100px;">
+    
+    <p style="font-weight: bold;font-style: italic; background-color: coral;color: brown;">
+      . For this special time, family and friends 
+      get together for fun. Wishing laughter and fun to cheer your days, in this festive season of Diwali
+       and always…
+
+
+
+
+
+    </p>
+    
+    </div>
+
+
+
+    <p  style=" font-style: italic;color: aquamarine;background-color: blueviolet;font-weight: bold; font">Diwali is a much-awaited festival in the country. The festival marks the return of Lord Rama along with Sita and Lakshman from 14 years of exile. In order to welcome them, the citizens of Ayodhya lighted diyas and celebrated the festival with much enthusiasm. The ritual has been continued from years. People decorate their houses and light diyas and candles and worship goddess Lakshmi as she is believed to bring prosperity. People make rangoli and share Diwali wishes with each other.</p>
+    <h3 id="wishes">Wishes</h3>
+    <div style="background-color: #e4ff1a
+    ">
+      <ul style="font-weight: bold; font-style: italic;background-color: #ffbf00;">
+        <li>
+          Diwali is an occasion to let the light of Diyas and candles illuminate not just your home but your life too.
+        </li>
+      </ul>
+      <ul style="font-weight: bold; font-style: italic;" >
+        <li> Look at the bright side of life and forget the dark agonies surrounding it. Have a safe and blessed Diwali!!</li>
+      </ul>
+      
+      <ul style="background-color: #ffbf00; font-weight: bold; font-style: italic;" >
+        <li>May all the lamps you light on the occasion of Diwali bring peace, joy, and happiness to your life. Hope that the coming year turns out to be the most successful one for you. Happy Diwali!</li>
+      </ul>
+    </div>
+<div style="font-style: italic;font-weight: bold;background-color: cyan;color: darkblue;">
+  Thank You So much for watching!
+  I am ANanya Telrandhe from 7th F. I made this using HTML and CSS. Hope you liked it!</div>
+     </div>
+
+  <div class="main">
+    <h1 id="diwali"><b>DIWALI</b></h1>
+
+    <!-- what is diwali diiv -->
+    <div class="whatisdiwali" id="what">
+      <h3 id="whatisdiwalihead">What is Diwali?</h3>
+    <div class="image_whatisdiwali" style="height:200px;">
+    <img src="diwali images (4).jpg">
+    </div>
+  
+    <h4 id="whatisdiwalipara">Diwali (English: /dɪˈwɑːliː/; Deepavali (IAST: dīpāvali) or Divali) is the Indian festival of lights, usually lasting five days and celebrated during the Hindu Lunisolar month Kartika (between mid-October and mid-November).[7][8] One of the most popular festivals of Hinduism, Diwali symbolizes the spiritual "victory of light over darkness, good over evil, and knowledge over ignorance".
+
+    </h4>
+    </div>
+    
+     <!-- what is diwali diiv -->
+
+
+    <br>
+    <div class="whycelebrate" id="why" style="
+    
+    background-color:orangered ;padding: 10px; ">
+      <h2 style=" 
+      border: red; border-width: 10px; border-style: groove;
+      background-color:rgb(255, 181, 181); color: rgb(3, 3, 3);
+      padding: 10px;">
+        Why is Diwali celebrated?</h2>
+      
+      <div class="fakeimg" style="height:200px;">
+      <img src="diwali images (5).jpg " style="padding: 10px;"
+      width="70%" height="170px"></div>
+      <p style="font-weight: bold;">In most parts of India, Diwali is celebrated for five days.</p>
+    <ul style="margin: 0px;
+    background-color: orange;" >
+      <li style="background-color: orange;"><b><i>First Day, Dhanteras: Worshipping of Lord Yama and a huge amount of buying, specifically gold, silver and precious stones, ornaments, new clothes and utensils, takes placeis done on this day. On this day, Lord Dhanwantari is believed to have come out of the ocean with Ayurveda, the science of medicine, for the benefit of mankind.</li>
+      </i></b> 
+    </ul>
+    <ul>
+      <li><b><i>The second day of Diwali week is called the Kali Chaudas or Narak Chaturdasi, Roop Chaturdashi, Narak Chaturdasi In some parts of India, it is simply the Choti Diwali, On this day Lord Krishna is known to have destroyed the demon Narakasur, freeing the world from fear.
+      </i></b>     </li>
+     
+    </ul>
+    <ul style="margin: 0px;
+    background-color: orange;">
+      <li><b><i>The third day of these festivities is the actual Diwali/ Deepawali, when Goddess Lakshmi is worshipped, along with Lord Ganesha. People light diyas and candles in their homes, and the streets all across is light up with millions of lights, diyas and bursting of crackers
+      </i></b>     </li>
+      
+    </ul>
+    <ul>
+      <li><b><i>The fourth day is celebrated in various forms all across India. In Gujarat this day is celebrated as Bestu Baras, the New Year as per their Calendar. In Northern states of India, this day is widely celebrated as Govardhan Pooja and Vishwakarma Day, when people worship their instruments, arms and machinery. Most or all business establishments, thus remain closed on this day. This day is also called as Annakut.
+      </i></b>  </li>
+      
+    </ul>
+    <ul style="margin: 0px;
+    background-color: orange;">
+      <li> <b><i>  The fifth day of Diwali festivities is celebrated as the Bhai Dooj or Bhai Beej or Bhai Teeka/ Tilak or Bhai Fota (In Bengal).
+      </i></b>    </li>
+     
+    </ul>
+    </div>
+   
+  </div>
+</div>
+
+
+
+<footer>
+
+  <div class="footer">
+    <h2>Thank you so much for watching! This was Ananya Telrandhe from 7th F .- The creater of "this website"</h2>
+ <h3>HOPE YOU LIKED iT!!!</h3>
+ 
+    <h1> ANANYA TELRANDHE </h1>
+  
+  
+  </div>
+
+
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
