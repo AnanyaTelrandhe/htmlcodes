@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(252, 220, 160);
+        }
+
+
+        /* css demo */
+
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+
+ margin: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <script>
+alert("Hey welcome to this calculator!");
+alert("you will get answer in console section");
+let fname = prompt("your first name:");
+let lname = prompt("your lastname");
+console.log("your name registered:", fname, lname);
+alert("let's find hours to days");
+let hrstoday= prompt(" enter hours:")
+console.log ("hours:" , hrstoday , ",days:" , hrstoday/24);
+
+alert("let's find day to hours");
+let daytohr = prompt(" day to hour enter day:");
+console.log("days:", daytohr ,",hours:",daytohr*24);
+
+alert("let's find seconds to mins");
+let sectomin = prompt("Secoonds:")
+console.log("seconds",sectomin,", min :" ,sectomin/60);
+
+alert("let's find mins to hours");
+let mintohr = prompt("hours:")
+console.log("mins",mintohr,", hour :" ,mintohr/60);
+
+    </script>
+
+
+
+<!-- html demo -->
+
+
+<div class="header" style="background-color:palevioletred; color:rgb(163, 7, 7);
+border: 20px groove maroon;">
+    <h2>Welcome! </h2>
+  </div>
+  
+  <div class="row" style="margin-left: 20px;margin-right: 20px;">
+    <div class="column side" style="background-color:#aaa;
+    background-image: url(data:image/jpeg;base64,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);
+    
+">
+   
+      <ul style="font-size: 30px;     background-color: gold;">
+        <li style="list-style-type: upper-roman; font-size: 35px;">
+          <b><i> You can convert </i></b> </li>
+        
+               <li style="background-color: orange;"><b><i>Hours to days</i></b></li>
+               <li><b><i>Days to hours</i></b></li>
+               <li style="background-color: orange;"><b><i>seconds to minuites</i></b></li>
+               <li><b><i>minuites to hours</i></b></li>
+               <li style="background-color: orange;"><b><i>Hours to days</i></b></li>
+        
+        
+        
+              </ul>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="column middle" style="text-align: center;font-size:30px;background-color:lightgreen;
+    background: rgb(8,237,255);
+background: linear-gradient(90deg, rgba(8,237,255,1) 0%, rgba(251,0,237,1) 47%, rgba(87,69,252,1) 100%);"
+    
+    >
+<b>
+  <i style="color: green;">
+    Welcome to this converter website MADE BY
+  </i>
+</b>   <b><i style="color: blue;">
+    Ananya Telrandhe</i></b>
+  .<span style="color: crimson;"> 
+  <b><i>
+    You will get all answers in 
+  </i></b<span style="color: rgb(182, 3, 113);
+    font-size: 30px; ">
+  <b><i>  console section</i></b> 
+  </span></span>
+  <br>
+<b style="color:gold">Also don't forget to visit these links!</b> 
+<br><br>
+
+  <b><i >Thank you!</i></b>
+  <br>
+  <b><i style="font-size: 45px ;color: indigo;
+    ">Have a nice day!!</i></b>
+</div>
+
+
+
+
+
+
+
+
+
+    <div class="column side" style="
+    background: rgb(69,208,26);
+background: linear-gradient(0deg, rgba(69,208,26,1) 2%, rgba(12,242,247,1) 100%);">
+     <h1>My some of apps</h1>
+     
+     <a  target="_blank" href="https://studio.code.org/projects/applab/_ob9a-bt5W7dZIs2iVUkSivYgYwmgo-PVJjrA2DMsns"
+     style="font-size: 30px; color: rgb(96, 0, 151);">
+      US dollars to Indian rupees converter</a>    
+    
+        <br><br>
+     <a target="_blank"  href="https://studio.code.org/projects/applab/wpWS
+     LKANijolK7M2zftp-CpCMgIu-kxR8dQb3Xp6eR4" style="font-size: 30px; color: rgb(165, 6, 138);">
+     Area and perieter converter</a>    
+    
+        <br><br>
+     <a  href="https://studio.code.org/projects/applab/2_l8
+     zCSrgVMWCRAhXgjj1XzmzNURqDrqvDsgbq0a0GE" target="_blank" style="font-size: 30px; color: rgb(180, 12, 12);">
+      CALCULATOR</a>    
+    
+
+    
+    </div>
+  </div>
+
+  <div class="footer" style="font-size: 50px; background-color: lightsalmon;
+  margin: 20px;">
+    <p ><b><i>
+      -Ananya Telrandhe
+    </i></b></p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1 style="background-color: aqua;">Welcome to <span style="font-size: 50px;  color: blue; ">CONVERTER</span> made by ANANYA</h1> -->
+<!-- <div style="font-size: 40px;">
+
+    <ul style=" list-style-type: square; font-weight: bolder; color: red; background-color: yellow;">  
+
+        <li>Hours to days</li>
+    <li>Days to hours</li>
+    <li>Seconds to minuites</li>
+    <li>minuites to hours</li>
+    </ul> -->
+
+
+
+
+</div>
+ 
+
+
+</body>
+</html>
